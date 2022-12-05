@@ -4,8 +4,12 @@
       Loading...
     </div>
    
-    <div class="apartments-container" *ngIf="!(loading$ | async)">
-      TODO: Display cats list
+    <div class="cats-container" *ngIf="!(loading$ | async)">
+
+        <div *ngFor="let cat of cats$ | async">
+            <img [src]="cat.img" alt="Cat image">
+            <p><b>Breed:</b> {{cat.breed_name}}</p>
+        </div>
     </div>
 
 </section>

@@ -23,7 +23,7 @@ export const catsReducer = createReducer(
   on(loadCats, (state, { cats }) => {
     return {
       ...state,
-      apartments: cats,
+      cats: cats,
       loading: false,
     };
   })
