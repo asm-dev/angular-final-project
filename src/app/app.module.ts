@@ -15,6 +15,8 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { CatsListComponent } from './components/cats-list/cats-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ROOT_REDUCERS } from './state/app.state';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ROOT_REDUCERS } from './state/app.state';
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

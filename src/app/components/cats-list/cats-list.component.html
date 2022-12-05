@@ -6,10 +6,22 @@
    
     <div class="cats-container" *ngIf="!(loading$ | async)">
 
-        <div *ngFor="let cat of cats$ | async">
-            <img [src]="cat.img" alt="Cat image">
-            <p><b>Breed:</b> {{cat.breed_name}}</p>
-        </div>
+        <mat-card class="cat-card" *ngFor="let cat of cats$ | async">
+
+            <mat-card-header>
+                <img mat-card-image src="{{cat.img}}" alt="Photo of a {{cat.breed_name}} cat">
+            </mat-card-header>
+
+            <mat-card-content>
+                <p><b>Breed:</b> {{cat.breed_name}}</p>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-stroked-button>View details</button>
+            </mat-card-actions>
+
+        </mat-card>
+
     </div>
 
 </section>
