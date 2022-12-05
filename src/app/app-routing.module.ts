@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { CatsListComponent } from './components/cats-list/cats-list.component';
 
-
+const routes: Routes = [
+  {
+    path:"",
+    component: CatsListComponent
+  }
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

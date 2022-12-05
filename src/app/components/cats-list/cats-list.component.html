@@ -1,1 +1,11 @@
-<p>cats-list works!</p>
+<section>
+    
+    <div *ngIf="loading$ | async">
+      Loading...
+    </div>
+   
+    <div class="apartments-container" *ngIf="!(loading$ | async)">
+      TODO: Display cats list
+    </div>
+
+</section>

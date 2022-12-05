@@ -14,6 +14,7 @@ import { CatDetailsComponent } from './components/cat-details/cat-details.compon
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { CatsListComponent } from './components/cats-list/cats-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ROOT_REDUCERS } from './state/app.state';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([]),
     BrowserAnimationsModule
