@@ -1,0 +1,886 @@
+{ 
+  "cats":[
+    {
+      "id": 0,
+      "img": "https://cdn2.thecatapi.com/images/TGuAku7fM.jpg",
+      "breed_name": "Abyssinian",
+      "breed_origin": "Egypt",
+      "vocalisation": 1,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 1,
+      "img": "https://cdn2.thecatapi.com/images/tv8tNeYaU.jpg",
+      "breed_name": "Abyssinian",
+      "breed_origin": "Egypt",
+      "vocalisation": 1,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 2,
+      "img": "https://cdn2.thecatapi.com/images/SwjDQ76Ix.jpg",
+      "breed_name": "Balinese",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 3,
+      "img": "https://cdn2.thecatapi.com/images/13MkvUreZ.jpg",
+      "breed_name": "Balinese",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 4,
+      "img": "https://cdn2.thecatapi.com/images/Rl39SPjDO.png",
+      "breed_name": "Bengal",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 5,
+      "img": "https://cdn2.thecatapi.com/images/H_UWbOfra.jpg",
+      "breed_name": "Bengal",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 6,
+      "img": "https://cdn2.thecatapi.com/images/HOrX5gwLS.jpg",
+      "breed_name": "Birman",
+      "breed_origin": "France",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 7,
+      "img": "https://cdn2.thecatapi.com/images/Bc0CMLOjz.jpg",
+      "breed_name": "Bombay",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 8,
+      "img": "https://cdn2.thecatapi.com/images/xNuSF5YWY.jpg",
+      "breed_name": "British Shorthair",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 4
+    },
+    {
+      "id": 9,
+      "img": "https://cdn2.thecatapi.com/images/4lXnnfxac.jpg",
+      "breed_name": "Burmese",
+      "breed_origin": "Burma",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 10,
+      "img": "https://cdn2.thecatapi.com/images/RIRLq-8sp.jpg",
+      "breed_name": "Cornish Rex",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 11,
+      "img": "https://cdn2.thecatapi.com/images/uUGt0UBzF.jpg",
+      "breed_name": "Devon Rex",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 12,
+      "img": "https://cdn2.thecatapi.com/images/2UAyYkzVK.jpg",
+      "breed_name": "Egyptian Mau",
+      "breed_origin": "Egypt",
+      "vocalisation": 3,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 13,
+      "img": "https://cdn2.thecatapi.com/images/oxuem0v7U.jpg",
+      "breed_name": "Egyptian Mau",
+      "breed_origin": "Egypt",
+      "vocalisation": 3,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 14,
+      "img": "https://cdn2.thecatapi.com/images/s_SbQ3Xju.jpg",
+      "breed_name": "Exotic Shorthair",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 15,
+      "img": "https://cdn2.thecatapi.com/images/zJkeHza2K.jpg",
+      "breed_name": "Exotic Shorthair",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 16,
+      "img": "https://cdn2.thecatapi.com/images/FZpeiLi4n.jpg",
+      "breed_name": "Exotic Shorthair",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 17,
+      "img": "https://cdn2.thecatapi.com/images/7Q76qhEAF.jpg",
+      "breed_name": "Exotic Shorthair",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 18,
+      "img": "https://cdn2.thecatapi.com/images/u2Ezm_CgQ.jpg",
+      "breed_name": "Exotic Shorthair",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 19,
+      "img": "https://cdn2.thecatapi.com/images/KJF8fB_20.jpg",
+      "breed_name": "Exotic Shorthair",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 5
+    },
+    {
+      "id": 20,
+      "img": "https://cdn2.thecatapi.com/images/bGUQ04k2E.jpg",
+      "breed_name": "Havana Brown",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 21,
+      "img": "https://cdn2.thecatapi.com/images/cPDuEX5tZ.jpg",
+      "breed_name": "Chausie",
+      "breed_origin": "Egypt",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 22,
+      "img": "https://cdn2.thecatapi.com/images/vJ3lEYgXr.jpg",
+      "breed_name": "Chausie",
+      "breed_origin": "Egypt",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 23,
+      "img": "https://cdn2.thecatapi.com/images/mNOdlAkXR.jpg",
+      "breed_name": "Cheetoh",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 24,
+      "img": "https://cdn2.thecatapi.com/images/BDMOZo668.jpg",
+      "breed_name": "Colorpoint Shorthair",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 4,
+      "affection_level": 4
+    },
+    {
+      "id": 25,
+      "img": "https://cdn2.thecatapi.com/images/3KG57GfMW.jpg",
+      "breed_name": "Donskoy",
+      "breed_origin": "Russia",
+      "vocalisation": 2,
+      "dog_friendly": 3,
+      "affection_level": 4
+    },
+    {
+      "id": 26,
+      "img": "https://cdn2.thecatapi.com/images/hYG6uIRWL.jpg",
+      "breed_name": "Himalayan",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 2,
+      "affection_level": 5
+    },
+    {
+      "id": 27,
+      "img": "https://cdn2.thecatapi.com/images/fWbeAxpQH.jpg",
+      "breed_name": "Javanese",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 28,
+      "img": "https://cdn2.thecatapi.com/images/in-CD5LH5.jpg",
+      "breed_name": "LaPerm",
+      "breed_origin": "Thailand",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 29,
+      "img": "https://cdn2.thecatapi.com/images/4hZdbV_8E.jpg",
+      "breed_name": "LaPerm",
+      "breed_origin": "Thailand",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 30,
+      "img": "https://cdn2.thecatapi.com/images/bL3lrUi1A.jpg",
+      "breed_name": "LaPerm",
+      "breed_origin": "Thailand",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 31,
+      "img": "https://cdn2.thecatapi.com/images/ggoVRMisX.jpg",
+      "breed_name": "LaPerm",
+      "breed_origin": "Thailand",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 32,
+      "img": "https://cdn2.thecatapi.com/images/oKgfW90l6.jpg",
+      "breed_name": "Manx",
+      "breed_origin": "Isle of Man",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 33,
+      "img": "https://cdn2.thecatapi.com/images/pzIURJPra.jpg",
+      "breed_name": "Munchkin",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 34,
+      "img": "https://cdn2.thecatapi.com/images/eDsBV6sYe.jpg",
+      "breed_name": "Munchkin",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 35,
+      "img": "https://cdn2.thecatapi.com/images/106hayhS4.jpg",
+      "breed_name": "Munchkin",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 36,
+      "img": "https://cdn2.thecatapi.com/images/OGTWqNNOt.jpg",
+      "breed_name": "Nebelung",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 37,
+      "img": "https://cdn2.thecatapi.com/images/YYIPhGhCb.jpg",
+      "breed_name": "Norwegian Forest Cat",
+      "breed_origin": "Norway",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 38,
+      "img": "https://cdn2.thecatapi.com/images/7x-75d7vB.jpg",
+      "breed_name": "Norwegian Forest Cat",
+      "breed_origin": "Norway",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 39,
+      "img": "https://cdn2.thecatapi.com/images/AnSMHMGvb.jpg",
+      "breed_name": "Norwegian Forest Cat",
+      "breed_origin": "Norway",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 40,
+      "img": "https://cdn2.thecatapi.com/images/2JgKj4y4B.jpg",
+      "breed_name": "Norwegian Forest Cat",
+      "breed_origin": "Norway",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 41,
+      "img": "https://cdn2.thecatapi.com/images/_l8H9YK5_.jpg",
+      "breed_name": "Ocicat",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 42,
+      "img": "https://cdn2.thecatapi.com/images/imz2EwFWv.jpg",
+      "breed_name": "Ocicat",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 43,
+      "img": "https://cdn2.thecatapi.com/images/U3nsHnCXU.jpg",
+      "breed_name": "Oriental",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 44,
+      "img": "https://cdn2.thecatapi.com/images/0Z9FWHLuK.jpg",
+      "breed_name": "Oriental",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 45,
+      "img": "https://cdn2.thecatapi.com/images/d_RzH-Zft.jpg",
+      "breed_name": "Persian",
+      "breed_origin": "Iran (Persia)",
+      "vocalisation": 1,
+      "dog_friendly": 2,
+      "affection_level": 5
+    },
+    {
+      "id": 46,
+      "img": "https://cdn2.thecatapi.com/images/yehyXOeid.jpg",
+      "breed_name": "Persian",
+      "breed_origin": "Iran (Persia)",
+      "vocalisation": 1,
+      "dog_friendly": 2,
+      "affection_level": 5
+    },
+    {
+      "id": 47,
+      "img": "https://cdn2.thecatapi.com/images/b4paC3RGM.jpg",
+      "breed_name": "Pixie-bob",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 48,
+      "img": "https://cdn2.thecatapi.com/images/3XUcuC9fj.jpg",
+      "breed_name": "Ragdoll",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 49,
+      "img": "https://cdn2.thecatapi.com/images/TnwHiS7nO.jpg",
+      "breed_name": "Ragdoll",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 50,
+      "img": "https://cdn2.thecatapi.com/images/DdmsQrCAv.jpg",
+      "breed_name": "Russian Blue",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 3
+    },
+    {
+      "id": 51,
+      "img": "https://cdn2.thecatapi.com/images/ErPMMvcv2.jpg",
+      "breed_name": "Russian Blue",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 3
+    },
+    {
+      "id": 52,
+      "img": "https://cdn2.thecatapi.com/images/LIoOlcalr.jpg",
+      "breed_name": "Russian Blue",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 3
+    },
+    {
+      "id": 53,
+      "img": "https://cdn2.thecatapi.com/images/2bPsrIcp-.jpg",
+      "breed_name": "Russian Blue",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 3
+    },
+    {
+      "id": 54,
+      "img": "https://cdn2.thecatapi.com/images/bpZGfNLW1.png",
+      "breed_name": "Russian Blue",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 3,
+      "affection_level": 3
+    },
+    {
+      "id": 55,
+      "img": "https://cdn2.thecatapi.com/images/yKXeUMNZ8.jpg",
+      "breed_name": "Savannah",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 56,
+      "img": "https://cdn2.thecatapi.com/images/iI8IyNGDg.jpg",
+      "breed_name": "Scottish Fold",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 57,
+      "img": "https://cdn2.thecatapi.com/images/83CUYAi3g.jpg",
+      "breed_name": "Scottish Fold",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 58,
+      "img": "https://cdn2.thecatapi.com/images/dkN5wGUxC.jpg",
+      "breed_name": "Scottish Fold",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 59,
+      "img": "https://cdn2.thecatapi.com/images/zmG5D_Xne.jpg",
+      "breed_name": "Scottish Fold",
+      "breed_origin": "United Kingdom",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 60,
+      "img": "https://cdn2.thecatapi.com/images/enV_ZqSpp.jpg",
+      "breed_name": "Selkirk Rex",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 61,
+      "img": "https://cdn2.thecatapi.com/images/k5Vrnaz_Q.jpg",
+      "breed_name": "Siamese",
+      "breed_origin": "Thailand",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 62,
+      "img": "https://cdn2.thecatapi.com/images/dv2BqDVGr.jpg",
+      "breed_name": "Siberian",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 63,
+      "img": "https://cdn2.thecatapi.com/images/wiFvbArkQ.jpg",
+      "breed_name": "Siberian",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 64,
+      "img": "https://cdn2.thecatapi.com/images/JAqzyLX9k.jpg",
+      "breed_name": "Siberian",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 65,
+      "img": "https://cdn2.thecatapi.com/images/FUJOW3SIi.jpg",
+      "breed_name": "Siberian",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 66,
+      "img": "https://cdn2.thecatapi.com/images/GOvziuOyw.jpg",
+      "breed_name": "Singapura",
+      "breed_origin": "Singapore",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 67,
+      "img": "https://cdn2.thecatapi.com/images/6jbkliQh5.jpg",
+      "breed_name": "Singapura",
+      "breed_origin": "Singapore",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 68,
+      "img": "https://cdn2.thecatapi.com/images/L5QYxsrYw.jpg",
+      "breed_name": "Somali",
+      "breed_origin": "Somalia",
+      "vocalisation": 1,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 69,
+      "img": "https://cdn2.thecatapi.com/images/f0UR7b5nA.jpg",
+      "breed_name": "Somali",
+      "breed_origin": "Somalia",
+      "vocalisation": 1,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 70,
+      "img": "https://cdn2.thecatapi.com/images/JKITuMU25.jpg",
+      "breed_name": "Sphynx",
+      "breed_origin": "Canada",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 71,
+      "img": "https://cdn2.thecatapi.com/images/Br8qCwbS9.jpg",
+      "breed_name": "Sphynx",
+      "breed_origin": "Canada",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 72,
+      "img": "https://cdn2.thecatapi.com/images/MizM7dBMU.jpg",
+      "breed_name": "Bambino",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 73,
+      "img": "https://cdn2.thecatapi.com/images/wFQIf01uy.jpg",
+      "breed_name": "Bambino",
+      "breed_origin": "United States",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 74,
+      "img": "https://cdn2.thecatapi.com/images/_PEqOH17A.jpg",
+      "breed_name": "Cyprus",
+      "breed_origin": "Cyprus",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 75,
+      "img": "https://cdn2.thecatapi.com/images/GI062lGTf.png",
+      "breed_name": "European Burmese",
+      "breed_origin": "Burma",
+      "vocalisation": 4,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 76,
+      "img": "https://cdn2.thecatapi.com/images/VuFcqjORh.jpg",
+      "breed_name": "Maine Coon",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 77,
+      "img": "https://cdn2.thecatapi.com/images/Wq_eTQalE.jpg",
+      "breed_name": "Maine Coon",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 78,
+      "img": "https://cdn2.thecatapi.com/images/fG-wtktoL.jpg",
+      "breed_name": "Maine Coon",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 79,
+      "img": "https://cdn2.thecatapi.com/images/3IWhPRL3a.jpg",
+      "breed_name": "Maine Coon",
+      "breed_origin": "United States",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 80,
+      "img": "https://cdn2.thecatapi.com/images/84-HSUBbt.jpg",
+      "breed_name": "Siamese",
+      "breed_origin": "Thailand",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 81,
+      "img": "https://cdn2.thecatapi.com/images/-AiX8QA5I.png",
+      "breed_name": "Siamese",
+      "breed_origin": "Thailand",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 82,
+      "img": "https://cdn2.thecatapi.com/images/WmBbMJmwn.jpg",
+      "breed_name": "Siberian",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 83,
+      "img": "https://cdn2.thecatapi.com/images/e4K-lKOic.jpg",
+      "breed_name": "Siberian",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 84,
+      "img": "https://cdn2.thecatapi.com/images/AllGB9l57.jpg",
+      "breed_name": "Somali",
+      "breed_origin": "Somalia",
+      "vocalisation": 1,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 85,
+      "img": "https://cdn2.thecatapi.com/images/35ayLP9Ql.jpg",
+      "breed_name": "Somali",
+      "breed_origin": "Somalia",
+      "vocalisation": 1,
+      "dog_friendly": 4,
+      "affection_level": 5
+    },
+    {
+      "id": 86,
+      "img": "https://cdn2.thecatapi.com/images/q95bpC4ct.jpg",
+      "breed_name": "Tonkinese",
+      "breed_origin": "Canada",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 87,
+      "img": "https://cdn2.thecatapi.com/images/Qjb0fsrDo.jpg",
+      "breed_name": "Toyger",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 88,
+      "img": "https://cdn2.thecatapi.com/images/8rTgmNHn6.jpg",
+      "breed_name": "Toyger",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 89,
+      "img": "https://cdn2.thecatapi.com/images/7CGV6WVXq.jpg",
+      "breed_name": "Turkish Angora",
+      "breed_origin": "Turkey",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 90,
+      "img": "https://cdn2.thecatapi.com/images/ZDIuYg5UZ.png",
+      "breed_name": "Turkish Angora",
+      "breed_origin": "Turkey",
+      "vocalisation": 3,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 91,
+      "img": "https://cdn2.thecatapi.com/images/AhN6mXcc3.jpg",
+      "breed_name": "Turkish Van",
+      "breed_origin": "Turkey",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 92,
+      "img": "https://cdn2.thecatapi.com/images/Ua8Kr2RuM.jpg",
+      "breed_name": "Turkish Van",
+      "breed_origin": "Turkey",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 93,
+      "img": "https://cdn2.thecatapi.com/images/r9PDjW3xP.jpg",
+      "breed_name": "Turkish Van",
+      "breed_origin": "Turkey",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 94,
+      "img": "https://cdn2.thecatapi.com/images/5C9ONTPeY.jpg",
+      "breed_name": "Turkish Van",
+      "breed_origin": "Turkey",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 95,
+      "img": "https://cdn2.thecatapi.com/images/VXppGG5rK.jpg",
+      "breed_name": "Turkish Van",
+      "breed_origin": "Turkey",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 96,
+      "img": "https://cdn2.thecatapi.com/images/Yt4_Z0aDC.jpg",
+      "breed_name": "York Chocolate",
+      "breed_origin": "United States",
+      "vocalisation": 5,
+      "dog_friendly": 5,
+      "affection_level": 5
+    },
+    {
+      "id": 97,
+      "img": "https://cdn2.thecatapi.com/images/hFgotLj0m.jpg",
+      "breed_name": "Siberian",
+      "breed_origin": "Russia",
+      "vocalisation": 1,
+      "dog_friendly": 5,
+      "affection_level": 5
+    }
+]
+}
