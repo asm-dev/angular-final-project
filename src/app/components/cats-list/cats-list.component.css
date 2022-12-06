@@ -11,3 +11,7 @@ mat-card img{
     width: 300px; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
     height: 300px;
   }
+
+  .add-button, .loading-message {
+    margin: 1.5rem;
+  }

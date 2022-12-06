@@ -22,4 +22,8 @@ export class CatsAPIService {
   getCatById(id: number): Observable<Cat> {
     return this.http.get<Cat>(`${this.BASE_URL}/cats/${id}`);
   }
+
+  createCat(cat: Cat): Observable<Cat> {
+    return this.http.post<Cat>(`${this.BASE_URL}/cats`, cat)
+  }
 }

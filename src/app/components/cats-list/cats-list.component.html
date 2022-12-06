@@ -1,7 +1,10 @@
 <section>
-    
-    <div *ngIf="loading$ | async">
-      Loading...
+
+    <a [routerLink]="['cats/create']">
+        <button mat-raised-button class="add-button">Add a new cat</button>
+    </a>
+    <div *ngIf="loading$ | async" class="loading-message">
+      Loading cats...
     </div>
    
     <div class="cats-container" *ngIf="!(loading$ | async)">

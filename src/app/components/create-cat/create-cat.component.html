@@ -1,1 +1,25 @@
-<p>create-cat works!</p>
+<section>
+    <div class="add-cat">
+      <h2>Add Cat</h2>
+   
+      <form (ngSubmit)="createCat()" [formGroup]="createForm">
+        <label>Image URL:</label>
+        <input type="text" placeholder="Image URL" [formControl]="imgInput">
+        <label>Breed name:</label>
+        <input type="text" placeholder="Breed name" [formControl]="breedInput">
+        <label>Breed origin:</label>
+        <input type="text" placeholder="Breed origin" [formControl]="breedOriginInput">
+        <label>Vocalisation:</label>
+        <input type="number" placeholder="Vocalisation (0-5)" [formControl]="vocalisationInput">
+        <label>Dog friendliness:</label>
+        <input type="number" placeholder="Dog friendliness (0-5)" [formControl]="dogFriendlyInput">
+        <label>Affection level:</label>
+        <input type="number" placeholder="Affection (0-5)" [formControl]="affectionInput">
+        
+        <button class="submit-btn" type="submit" [disabled]="createForm.invalid">Submit</button>
+        <a class="back-btn" [routerLink]="['']">Back</a>
+      </form>
+   
+    </div>
+   
+  </section>

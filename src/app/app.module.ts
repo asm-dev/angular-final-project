@@ -22,6 +22,7 @@ import { CatDetailsEffects } from './state/effects/cat-details.effect';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { CreateCatEffects } from './state/effects/create-cat.effect';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { MatIconModule } from '@angular/material/icon';
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CatsEffects,CatDetailsEffects]),
+    EffectsModule.forRoot([CatsEffects,CatDetailsEffects, CreateCatEffects]),
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
