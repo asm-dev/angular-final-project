@@ -3,21 +3,45 @@
       <h2>Add Cat</h2>
    
       <form (ngSubmit)="createCat()" [formGroup]="createForm">
-        <label>Image URL:</label>
-        <input type="text" placeholder="Image URL" [formControl]="imgInput">
-        <label>Breed name:</label>
-        <input type="text" placeholder="Breed name" [formControl]="breedInput">
-        <label>Breed origin:</label>
-        <input type="text" placeholder="Breed origin" [formControl]="breedOriginInput">
-        <label>Vocalisation:</label>
-        <input type="number" placeholder="Vocalisation (0-5)" [formControl]="vocalisationInput">
-        <label>Dog friendliness:</label>
-        <input type="number" placeholder="Dog friendliness (0-5)" [formControl]="dogFriendlyInput">
-        <label>Affection level:</label>
-        <input type="number" placeholder="Affection (0-5)" [formControl]="affectionInput">
-        
-        <button class="submit-btn" type="submit" [disabled]="createForm.invalid">Submit</button>
-        <a class="back-btn" [routerLink]="['']">Back</a>
+        <mat-form-field appearance="outline">
+          <mat-label>Image URL:</mat-label>
+          <input matInput type="text" placeholder="Image URL" [formControl]="imgInput">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Breed name:</mat-label>
+          <input matInput type="text" placeholder="Breed name" [formControl]="breedInput">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Breed origin:</mat-label>
+          <input matInput type="text" placeholder="Breed origin" [formControl]="breedOriginInput">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Vocalisation</mat-label>
+          <input matInput type="number" placeholder="Vocalisation (0-5)" [formControl]="vocalisationInput">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Dog friendliness:</mat-label>
+          <input matInput type="number" placeholder="Dog friendliness (0-5)" [formControl]="dogFriendlyInput">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Affection level:</mat-label>
+          <input matInput type="number" placeholder="Affection (0-5)" [formControl]="affectionInput">
+        </mat-form-field>
+
+       <div class="form-btn-container">
+
+          <button mat-raised-button color="primary" type="submit" [disabled]="createForm.invalid">Submit</button>
+          
+          <a [routerLink]="['']">
+            <button mat-stroked-button>Back</button>
+          </a>
+        </div>
+
       </form>
    
     </div>
