@@ -5,6 +5,7 @@ import { Cat } from 'src/app/models/cat.model';
 import { loadCats, loadingCats } from 'src/app/state/actions/cats-list.action';
 import { AppState } from 'src/app/state/app.state';
 import { CatsAPIService } from 'src/app/services/cats-api.service';
+import { selectCats, selectLoading } from 'src/app/state/selectors/cats-list.selector';
 
 @Component({
   selector: 'app-cats-list',
@@ -24,13 +25,9 @@ export class CatsListComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.loading$ = this.store.select(state => state.catStates.loading);
-    this.cats$ = this.store.select(state => state.catStates.cats);
+    this.loading$ = this.store.select(selectLoading);
+    this.cats$ = this.store.select(selectCats);
 
     this.store.dispatch(loadingCats())
-
-    this.catsAPIService.getCats().subscribe(cats => { 
-      this.store.dispatch(loadCats({cats}))
-    }) 
   }
 }
