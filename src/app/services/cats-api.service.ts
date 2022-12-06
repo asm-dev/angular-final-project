@@ -13,8 +13,13 @@ export class CatsAPIService {
   constructor(private http: HttpClient) { }
  
   getCats(): Observable<Cat[]> {
-    return this.http.get<Cat[]>(`${this.BASE_URL}/cats`).pipe(
-      delay(3000)
-    );
+    return this.http.get<Cat[]>(`${this.BASE_URL}/cats`)
+    .pipe(
+      delay(1000)
+    );    
+  }
+
+  getCatById(id: number): Observable<Cat> {
+    return this.http.get<Cat>(`${this.BASE_URL}/cats/${id}`);
   }
 }

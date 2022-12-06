@@ -18,6 +18,7 @@ import { ROOT_REDUCERS } from './state/app.state';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CatsEffects } from './state/effects/cats.list.effect';
+import { CatDetailsEffects } from './state/effects/cat-details.effect';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { CatsEffects } from './state/effects/cats.list.effect';
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CatsEffects]),
+    EffectsModule.forRoot([CatsEffects,CatDetailsEffects]),
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,

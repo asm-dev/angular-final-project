@@ -1,1 +1,10 @@
-<p>cat-details works!</p>
+<div class="cat-container"  *ngIf="cat$ | async as cat">
+      
+    <a [routerLink]="['cats', cat.id]">
+        <h2>{{ cat.breed_name }}</h2>
+        <img [src]="cat.img" [alt]="cat.breed_name">
+    </a>
+
+    <button class="back-btn" (click)="goBack()">Back</button>
+
+</div>
