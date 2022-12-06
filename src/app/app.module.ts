@@ -19,6 +19,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CatsEffects } from './state/effects/cats.list.effect';
 import { CatDetailsEffects } from './state/effects/cat-details.effect';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { CatDetailsEffects } from './state/effects/cat-details.effect';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatDividerModule,
+    MatListModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

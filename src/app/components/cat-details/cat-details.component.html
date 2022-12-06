@@ -1,10 +1,22 @@
-<div class="cat-container"  *ngIf="cat$ | async as cat">
-      
-    <a [routerLink]="['cats', cat.id]">
-        <h2>{{ cat.breed_name }}</h2>
-        <img [src]="cat.img" [alt]="cat.breed_name">
-    </a>
+<div class="cat-details-container"  *ngIf="cat$ | async as cat">
 
-    <button class="back-btn" (click)="goBack()">Back</button>
+  <img [src]="cat.img" [alt]="cat.breed_name">
+
+  <div class="cat-details">
+
+    <mat-list>
+      <mat-list-item>
+        <span matListItemTitle>Breed: <b>{{cat.breed_name}}</b></span>
+        <span>Breed origin: {{cat.breed_origin}}</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Vocalisation: <b>{{cat.vocalisation}}</b></mat-list-item>
+      <mat-list-item>Dog friendliness: <b>{{cat.dog_friendly}}</b></mat-list-item>
+      <mat-list-item>Affection level: <b>{{cat.affection_level}}</b></mat-list-item>
+    </mat-list>
+
+    <button mat-stroked-button (click)="goBack()">Back</button>
+    
+  </div>
 
 </div>
