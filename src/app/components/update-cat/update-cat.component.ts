@@ -6,6 +6,9 @@ import { Cat } from 'src/app/models/cat.model';
 import { loadingCat } from 'src/app/state/actions/cat-details.action';
 import { AppState } from 'src/app/state/app.state';
 import { selectCat } from 'src/app/state/selectors/cat-details.selector';
+import { updateCat, initUpdateCat } from 'src/app/state/actions/update-cat.action';
+import { selectUpdateCatSuccess } from 'src/app/state/selectors/update-cat.selector';
+import { Observable, take } from 'rxjs';
 
 
 @Component({
@@ -14,6 +17,9 @@ import { selectCat } from 'src/app/state/selectors/cat-details.selector';
   styleUrls: ['./update-cat.component.css']
 })
 export class UpdateCatComponent implements OnInit {
+
+  updateCatSuccess$: Observable<boolean>;
+
   id:number;
   editForm: FormGroup;
   imgInput: FormControl;
@@ -28,6 +34,8 @@ export class UpdateCatComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
   ) {
+    this.updateCatSuccess$ = new Observable();
+
     this.imgInput = new FormControl('', [Validators.required]);
     this.breedInput = new FormControl('', [Validators.required]);
     this.breedOriginInput = new FormControl('', [Validators.required]);
@@ -59,13 +67,34 @@ export class UpdateCatComponent implements OnInit {
           vocalisation: cat.vocalisation,
           dog_friendly: cat.dog_friendly,
           affection_level: cat.affection_level, 
-
         })
       }
     })
+
+    this.updateCatSuccess$ = this.store.select(selectUpdateCatSuccess);
+    this.store.dispatch(initUpdateCat());
+
   }
- 
+
+  
   updateCat(): void {
-    console.log("Update cat button works")
-  }
+
+    this.editForm.value.id = this.id;
+    this.editForm.value.editable = true;
+    
+    this.store.dispatch(updateCat({ cat: this.editForm.value}));
+    
+    // Check if cat was updated
+    this.updateCatSuccess$.subscribe(success => {
+      if (success) {
+        alert('Cat updated successfully!');
+        // Navigate to home
+        this.router.navigate(['/']);
+      } else {
+        console.log('fail');
+      }
+    });
+ 
+  };
+
 }

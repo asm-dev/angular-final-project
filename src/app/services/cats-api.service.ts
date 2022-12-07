@@ -30,4 +30,8 @@ export class CatsAPIService {
   deleteCatById(id: number): Observable<Cat> {
     return this.http.delete<Cat>(`${this.BASE_URL}/cats/${id}`)
   }
+
+  updateCat(cat: Cat): Observable<Cat> {
+    return this.http.put<Cat>(`${this.BASE_URL}/cats/${cat.id}`,cat)
+  }
 }

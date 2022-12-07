@@ -26,6 +26,7 @@ import { CreateCatEffects } from './state/effects/create-cat.effect';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UpdateCatComponent } from './components/update-cat/update-cat.component';
+import { UpdateCatEffects } from './state/effects/update-cat.effect';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { UpdateCatComponent } from './components/update-cat/update-cat.component
     ReactiveFormsModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([CatsEffects,CatDetailsEffects, CreateCatEffects]),
+    EffectsModule.forRoot([CatsEffects,CatDetailsEffects, CreateCatEffects, UpdateCatEffects]),
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
