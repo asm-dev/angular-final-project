@@ -17,8 +17,8 @@
 
     <div class="btns-container">
       <button mat-stroked-button (click)="goBack()">Back</button>
-      <button *ngIf="cat.editable" mat-stroked-button (click)="goBack()">Delete</button>
-      <button *ngIf="cat.editable" mat-stroked-button (click)="goBack()">Update</button>
+      <button *ngIf="cat.editable" mat-stroked-button color="primary" (click)="goBack()">Update</button>
+      <button *ngIf="cat.editable" mat-stroked-button color="warn"(click)="deleteCat()">Delete</button>
     </div>
     
     

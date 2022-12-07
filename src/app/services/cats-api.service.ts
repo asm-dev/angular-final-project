@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ɵisDefaultChangeDetectionStrategy } from '@angular/core';
 import { delay, Observable } from 'rxjs';
 import { Cat } from '../models/cat.model';
 import { HttpClient } from '@angular/common/http';
@@ -25,5 +25,9 @@ export class CatsAPIService {
 
   createCat(cat: Cat): Observable<Cat> {
     return this.http.post<Cat>(`${this.BASE_URL}/cats`, cat)
+  }
+
+  deleteCatById(id: number): Observable<Cat> {
+    return this.http.delete<Cat>(`${this.BASE_URL}/cats/${id}`)
   }
 }
