@@ -1,0 +1,28 @@
+.add-cat {
+    border: 1px solid rgb(211, 211, 211);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+   
+  .add-cat form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+
+.form-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  width: 100%;
+}

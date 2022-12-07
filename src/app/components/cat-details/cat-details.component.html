@@ -17,10 +17,16 @@
 
     <div class="btns-container">
       <button mat-stroked-button (click)="goBack()">Back</button>
-      <button *ngIf="cat.editable" mat-stroked-button color="primary" (click)="goBack()">Update</button>
+
+      <a [routerLink]="['/cats/update/',cat.id]"> 
+        <button *ngIf="cat.editable" mat-stroked-button color="primary">Update</button>
+      </a>
+
       <button *ngIf="cat.editable" mat-stroked-button color="warn"(click)="deleteCat()">Delete</button>
     </div>
-    
+<!-- 
+    <app-update-cat [catProp]="cat"></app-update-cat>
+     -->
     
   </div>
 

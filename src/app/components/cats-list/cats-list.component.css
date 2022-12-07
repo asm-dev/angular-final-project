@@ -1,17 +1,25 @@
 .cats-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
- 
-mat-card img{
-    object-fit: cover; /*this makes the image in src fit to the size specified below*/
-    width: 300px; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-    height: 300px;
-  }
 
-  .add-button, .loading-message {
-    margin: 1.5rem;
-  }
+mat-card img{
+  object-fit: cover; 
+  width: 300px;
+  height: 300px;
+}
+
+.add-button, .loading-message {
+  margin: 1.5rem;
+}
+
+.mat-mdc-card {
+  align-items: center;
+}
+
+.view-details-btn {
+  margin: 1rem auto;
+}

@@ -25,6 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CreateCatEffects } from './state/effects/create-cat.effect';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { UpdateCatComponent } from './components/update-cat/update-cat.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MatInputModule } from '@angular/material/input';
     NavBarComponent,
     CatDetailsComponent,
     ErrorPageComponent,
-    CatsListComponent
+    CatsListComponent,
+    UpdateCatComponent
   ],
   imports: [
     BrowserModule,

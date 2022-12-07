@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CatDetailsComponent } from './components/cat-details/cat-details.component';
 import { CatsListComponent } from './components/cats-list/cats-list.component';
 import { CreateCatComponent } from './components/create-cat/create-cat.component';
+import { UpdateCatComponent } from './components/update-cat/update-cat.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'cats/create',
     component: CreateCatComponent
+  },
+  {
+    path: 'cats/update/:id',
+    component: UpdateCatComponent
   },
   {
     path: 'cats/:id',
