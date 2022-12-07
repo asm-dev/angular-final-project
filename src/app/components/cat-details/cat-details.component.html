@@ -15,7 +15,12 @@
       <mat-list-item>Affection level: <b>{{cat.affection_level}}</b></mat-list-item>
     </mat-list>
 
-    <button mat-stroked-button (click)="goBack()">Back</button>
+    <div class="btns-container">
+      <button mat-stroked-button (click)="goBack()">Back</button>
+      <button *ngIf="cat.editable" mat-stroked-button (click)="goBack()">Delete</button>
+      <button *ngIf="cat.editable" mat-stroked-button (click)="goBack()">Update</button>
+    </div>
+    
     
   </div>
 

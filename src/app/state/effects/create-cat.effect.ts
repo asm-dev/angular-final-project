@@ -11,12 +11,12 @@ export class CreateCatEffects {
     private catAPIservice: CatsAPIService
   ) {}
  
-  createApartment$ = createEffect(() => {
+  createCat$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(createCat),
-      mergeMap(action => this.catAPIservice.createCat(action.cat) // Create the apartment
+      mergeMap(action => this.catAPIservice.createCat(action.cat) // Create the cat
         .pipe(
-          map(result => createCatSuccess() // dispatch the createApartmentSuccess action
+          map(result => createCatSuccess() // dispatch the createCatSuccess action
           )
         ),
       )

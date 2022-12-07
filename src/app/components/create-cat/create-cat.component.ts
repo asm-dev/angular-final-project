@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { Observable, take } from 'rxjs';
+import { Cat } from 'src/app/models/cat.model';
 import { createCat, initCreateCat } from 'src/app/state/actions/create-cat.action';
 import { AppState } from 'src/app/state/app.state';
 import { selectCreateCatSuccess } from 'src/app/state/selectors/create-cat.selector';
@@ -23,6 +24,8 @@ export class CreateCatComponent  implements OnInit{
   vocalisationInput: FormControl;
   dogFriendlyInput: FormControl;
   affectionInput: FormControl;
+
+  
   
   constructor(
     private store: Store<AppState>,
@@ -45,6 +48,7 @@ export class CreateCatComponent  implements OnInit{
       dog_friendly: this.dogFriendlyInput,
       affection_level: this.affectionInput,  
     });
+
  
   }
  
@@ -56,6 +60,9 @@ export class CreateCatComponent  implements OnInit{
   }
  
   createCat(): void {
+    
+    this.createForm.value.editable = true;
+   
     // Create cat
     this.store.dispatch(createCat({ cat: this.createForm.value}));
  

@@ -16,3 +16,8 @@ img {
     max-width: 50%;
   }
 }
+
+.btns-container {
+  display: flex;
+  gap: 1.5rem;
+}

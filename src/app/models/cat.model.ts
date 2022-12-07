@@ -1,13 +1,3 @@
-// export interface Cat {
-//     id: string
-//     img: string
-//     breed_name: string
-//     breed_origin: string
-//     vocalisation: number
-//     dog_friendly: number
-//     affection_level: number
-// }
-
 export class Cat {
     constructor (
         private _id: number,
@@ -16,7 +6,8 @@ export class Cat {
         private _breed_origin: string,
         private _vocalisation: number,
         private _dog_friendly: number,
-        private _affection_level: number
+        private _affection_level: number,
+        private _editable: boolean = true
     ){}
 
     public get id(): number {
@@ -73,6 +64,14 @@ export class Cat {
 
     public set affection_level(value: number) {
         this._affection_level = value;
+    }
+
+    public get editable(): boolean {
+        return this._editable;
+    }
+
+    public set editable(value: boolean) {
+        this._editable = value;
     }
 
 }
