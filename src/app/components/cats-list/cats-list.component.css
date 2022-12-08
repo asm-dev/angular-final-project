@@ -4,12 +4,13 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 mat-card img{
   object-fit: cover; 
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .add-button, .loading-message {

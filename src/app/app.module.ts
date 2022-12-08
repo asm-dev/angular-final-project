@@ -27,6 +27,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UpdateCatComponent } from './components/update-cat/update-cat.component';
 import { UpdateCatEffects } from './state/effects/update-cat.effect';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { UpdateCatEffects } from './state/effects/update-cat.effect';
     CatDetailsComponent,
     ErrorPageComponent,
     CatsListComponent,
-    UpdateCatComponent
+    UpdateCatComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

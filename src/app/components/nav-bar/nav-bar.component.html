@@ -1,1 +1,13 @@
-<p>nav-bar works!</p>
+<nav class="nav-bar">
+    <a [routerLink]="['']">
+        <img src="../../../assets/images/cat-shelter-logo.png" alt="Cat Shelter logo" class="nav-bar-logo">
+    </a>
+    <div class="nav-bar-btns">
+        <a [routerLink]="['']">
+            <button mat-flat-button class="add-button">Browse cats</button>
+        </a>
+        <a [routerLink]="['cats/create']">
+            <button mat-raised-button class="add-button">Add a new cat</button>
+        </a>
+    </div>
+</nav>
