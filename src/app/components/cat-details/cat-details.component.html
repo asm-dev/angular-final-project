@@ -1,7 +1,7 @@
 <div class="cat-details-container"  *ngIf="cat$ | async as cat">
 
-  <img [src]="cat.img" [alt]="cat.breed_name">
-  <mat-divider></mat-divider>
+  <img [src]="cat.img" [alt]="cat.breed_name" class="cat-details-img">
+  
 
   <div class="cat-details-content">
 
@@ -18,17 +18,13 @@
 
     <div class="btns-container">
       <button mat-stroked-button (click)="goBack()">Back</button>
-
+      <!-- The update and delete buttons only display if the cat is editable (user made)-->
       <a [routerLink]="['/cats/update/',cat.id]"> 
         <button *ngIf="cat.editable" mat-stroked-button color="primary">Update</button>
       </a>
-
       <button *ngIf="cat.editable" mat-stroked-button color="warn"(click)="deleteCat()">Delete</button>
     </div>
-<!-- 
-    <app-update-cat [catProp]="cat"></app-update-cat>
-     -->
-    
+
   </div>
 
 </div>

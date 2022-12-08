@@ -1,8 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { Cat } from 'src/app/models/cat.model';
 import { loadingCat } from 'src/app/state/actions/cat-details.action';
 import { AppState } from 'src/app/state/app.state';
 import { selectCat } from 'src/app/state/selectors/cat-details.selector';
@@ -78,12 +77,10 @@ export class UpdateCatComponent implements OnInit {
 
   }
 
-  
   updateCat(): void {
 
     this.editForm.value.id = this.id;
     this.editForm.value.editable = true;
-    
     this.store.dispatch(updateCat({ cat: this.editForm.value}));
     
     // Check if cat was updated

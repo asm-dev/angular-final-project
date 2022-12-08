@@ -25,7 +25,7 @@ a {
 }
 
 .update-cat, .add-cat {
-  width: 400px;
+  width: 300px;
   text-align: center;
   margin: 0 auto;
   padding: 1rem;
@@ -58,6 +58,11 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
+
+  .update-cat, .add-cat {
+    width: 400px;
+  }
+
   .update-cat-section {
     background-image: url('./assets/images/edit-cat.jpg')
   }

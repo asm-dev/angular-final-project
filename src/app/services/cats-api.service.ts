@@ -1,4 +1,4 @@
-import { Injectable, ɵisDefaultChangeDetectionStrategy } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { delay, Observable } from 'rxjs';
 import { Cat } from '../models/cat.model';
 import { HttpClient } from '@angular/common/http';
@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CatsAPIService {
 
+  //This is the JSON Server URL
   readonly BASE_URL = 'http://localhost:8000';
  
   constructor(private http: HttpClient) { }

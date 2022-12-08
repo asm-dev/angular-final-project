@@ -5,11 +5,10 @@
     </div>
    
     <div class="cats-container" *ngIf="!(loading$ | async)">
-
         <mat-card class="cat-card" *ngFor="let cat of cats$ | async">
         
             <mat-card-header>
-                <img mat-card-image src="{{cat.img}}" alt="Photo of a {{cat.breed_name}} cat">
+                <img class="cat-img" mat-card-image src="{{cat.img}}" alt="Photo of a {{cat.breed_name}} cat">
             </mat-card-header>
 
             <mat-card-content>
@@ -23,7 +22,6 @@
             </mat-card-actions>
 
         </mat-card>
-
     </div>
 
 </section>
