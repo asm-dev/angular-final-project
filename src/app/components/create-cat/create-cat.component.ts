@@ -7,6 +7,7 @@ import { Cat } from 'src/app/models/cat.model';
 import { createCat, initCreateCat } from 'src/app/state/actions/create-cat.action';
 import { AppState } from 'src/app/state/app.state';
 import { selectCreateCatSuccess } from 'src/app/state/selectors/create-cat.selector';
+import { CustomValidators } from 'src/app/utils/custom-validator';
 
 @Component({
   selector: 'app-create-cat',
@@ -34,11 +35,11 @@ export class CreateCatComponent  implements OnInit{
     this.createCatSuccess$ = new Observable();
  
     this.imgInput = new FormControl('', [Validators.required]);
-    this.breedInput = new FormControl('', [Validators.required]);
-    this.breedOriginInput = new FormControl('', [Validators.required]);
-    this.vocalisationInput = new FormControl('', [Validators.required]);
-    this.dogFriendlyInput = new FormControl('', [Validators.required]);
-    this.affectionInput = new FormControl('', [Validators.required]);
+    this.breedInput = new FormControl('', [Validators.required, CustomValidators.noShaunonian,]); //There are only 2 Shaunonian cats in the world
+    this.breedOriginInput = new FormControl('', [Validators.required, Validators.maxLength(56),]); //The United Kingdom of Great Britain and Northern Ireland
+    this.vocalisationInput = new FormControl('', [Validators.required, CustomValidators.validLevel(0,5),]);
+    this.dogFriendlyInput = new FormControl('', [Validators.required, CustomValidators.validLevel(0,5),]);
+    this.affectionInput = new FormControl('', [Validators.required, CustomValidators.validLevel(0,5),]);
     
     this.createForm = new FormGroup({
       img: this.imgInput,
@@ -49,7 +50,6 @@ export class CreateCatComponent  implements OnInit{
       affection_level: this.affectionInput,  
     });
 
- 
   }
  
   ngOnInit(): void {

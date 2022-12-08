@@ -9,6 +9,7 @@ import { selectCat } from 'src/app/state/selectors/cat-details.selector';
 import { updateCat, initUpdateCat } from 'src/app/state/actions/update-cat.action';
 import { selectUpdateCatSuccess } from 'src/app/state/selectors/update-cat.selector';
 import { Observable, take } from 'rxjs';
+import { CustomValidators } from 'src/app/utils/custom-validator';
 
 
 @Component({
@@ -37,11 +38,12 @@ export class UpdateCatComponent implements OnInit {
     this.updateCatSuccess$ = new Observable();
 
     this.imgInput = new FormControl('', [Validators.required]);
-    this.breedInput = new FormControl('', [Validators.required]);
-    this.breedOriginInput = new FormControl('', [Validators.required]);
-    this.vocalisationInput = new FormControl('', [Validators.required]);
-    this.dogFriendlyInput = new FormControl('', [Validators.required]);
-    this.affectionInput = new FormControl('', [Validators.required]);
+    this.breedInput = new FormControl('', [Validators.required, CustomValidators.noShaunonian,]); //There are only 2 Shaunonian cats in the world
+    this.breedOriginInput = new FormControl('', [Validators.required, Validators.maxLength(56),]); //The United Kingdom of Great Britain and Northern Ireland
+    this.vocalisationInput = new FormControl('', [Validators.required, CustomValidators.validLevel(0,5),]);
+    this.dogFriendlyInput = new FormControl('', [Validators.required, CustomValidators.validLevel(0,5),]);
+    this.affectionInput = new FormControl('', [Validators.required, CustomValidators.validLevel(0,5),]);
+    
     this.id = 0;
     
     this.editForm = new FormGroup({

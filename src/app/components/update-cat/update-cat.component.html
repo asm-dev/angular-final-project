@@ -1,36 +1,42 @@
-<section>
-    <div class="add-cat">
+<section class="update-cat-section">
+    <div class="update-cat">
       <h2>Update Cat Details</h2>
    
       <form (ngSubmit)="updateCat()" [formGroup]="editForm">
         <mat-form-field appearance="outline">
-          <mat-label>Image URL:</mat-label>
-          <input matInput type="text" placeholder="Image URL" [formControl]="imgInput">
+          <mat-label>Image URL</mat-label>
+          <input matInput type="text" placeholder="Image URL" [formControl]="imgInput" pattern="^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?$">
+          <mat-error *ngIf="imgInput.invalid">Please add a valid image URL</mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-          <mat-label>Breed name:</mat-label>
+          <mat-label>Breed name</mat-label>
           <input matInput type="text" placeholder="Breed name" [formControl]="breedInput">
+          <mat-error *ngIf="imgInput.invalid">Please add a breed name, you can use "mixed breed" if unsure</mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-          <mat-label>Breed origin:</mat-label>
+          <mat-label>Breed origin</mat-label>
           <input matInput type="text" placeholder="Breed origin" [formControl]="breedOriginInput">
+          <mat-error *ngIf="imgInput.invalid">Please add a breed origin, you can type "unknown" if unsure</mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
           <mat-label>Vocalisation</mat-label>
-          <input matInput type="number" placeholder="Vocalisation (0-5)" [formControl]="vocalisationInput">
+          <input matInput type="number" placeholder="0-5" [formControl]="vocalisationInput">
+          <mat-error *ngIf="imgInput.invalid">Please add the cat's meowing level</mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-          <mat-label>Dog friendliness:</mat-label>
-          <input matInput type="number" placeholder="Dog friendliness (0-5)" [formControl]="dogFriendlyInput">
+          <mat-label>Dog friendliness</mat-label>
+          <input matInput type="number" placeholder="0-5" [formControl]="dogFriendlyInput">
+          <mat-error *ngIf="imgInput.invalid">Please add the cat's dog friendliness level</mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-          <mat-label>Affection level:</mat-label>
-          <input matInput type="number" placeholder="Affection (0-5)" [formControl]="affectionInput">
+          <mat-label>Affection level</mat-label>
+          <input matInput type="number" placeholder="0-5" [formControl]="affectionInput">
+          <mat-error *ngIf="imgInput.invalid">Please add the cat's meowing level</mat-error>
         </mat-form-field>
 
        <div class="form-btn-container">
