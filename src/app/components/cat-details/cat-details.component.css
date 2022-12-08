@@ -6,22 +6,30 @@ img {
 
 .cat-details-container {
   justify-content: center;
+  flex-direction: column;
 }
 
-.cat-details-container, .cat-details {
+.cat-details-container, .cat-details-content {
  display: flex;
  align-items: center;
- flex-direction: column;
+}
+
+.cat-details-content {
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+
 }
 
 @media only screen and (min-width: 1000px) {
   img {
-    max-width: 50%;
+    max-height: 50vh;
   }
 }
 
 .btns-container {
-  margin-top: 3rem;
   display: flex;
   gap: 1.5rem;
+  flex-direction: column;
 }

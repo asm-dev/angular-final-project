@@ -1,8 +1,9 @@
 <div class="cat-details-container"  *ngIf="cat$ | async as cat">
 
   <img [src]="cat.img" [alt]="cat.breed_name">
+  <mat-divider></mat-divider>
 
-  <div class="cat-details">
+  <div class="cat-details-content">
 
     <mat-list>
       <mat-list-item>

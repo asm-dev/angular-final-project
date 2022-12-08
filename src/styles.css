@@ -17,7 +17,7 @@ a {
 }
 
 .update-cat-section, .add-cat-section {
-  height: 100%;
+  min-height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@ a {
   margin: 0 auto;
   padding: 1rem;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.945);
+  background-color: rgba(255, 255, 255, 0.87);
 }
 
 .update-cat h2, .add-cat h2 {
@@ -59,11 +59,11 @@ a {
 
 @media only screen and (min-width: 600px) {
   .update-cat-section {
-    background-image: url('https://images.unsplash.com/photo-1570458436416-b8fcccfe883f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')
+    background-image: url('./assets/images/edit-cat.jpg')
   }
 
   .add-cat-section {
-    background-image: url('https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    background-image: url('./assets/images/add-a-cat.jpg');
   }
   
   .update-cat, .add-cat {
