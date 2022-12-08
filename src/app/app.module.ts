@@ -28,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
 import { UpdateCatComponent } from './components/update-cat/update-cat.component';
 import { UpdateCatEffects } from './state/effects/update-cat.effect';
 import { FooterComponent } from './components/footer/footer.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

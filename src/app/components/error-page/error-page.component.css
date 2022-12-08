@@ -1,0 +1,33 @@
+.error-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-image: url('../../../assets/images/error-page-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.767);
+    height: fit-content;
+    border-radius: 4px;
+    gap: 1.5rem;
+}
+
+.error-message > h1 {
+    margin: 3rem 3rem 0 3rem;
+}
+
+.error-message > p {
+    margin: 0 3rem 0 3rem;
+}
+
+.error-message > a {
+    margin-bottom: 1.5rem;
+} 
