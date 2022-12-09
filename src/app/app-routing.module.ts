@@ -12,6 +12,10 @@ const routes: Routes = [
     component: CatsListComponent
   },
   {
+    path: "cats/*", // 404 Page
+    component: ErrorPageComponent,
+  },
+  {
     path: 'cats/create',
     component: CreateCatComponent
   },
@@ -28,10 +32,19 @@ const routes: Routes = [
     component: ErrorPageComponent,
   },
   
+  {
+    path: "cats/create/**", // 404 Page
+    component: ErrorPageComponent,
+  },
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 64],
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,3 +1,7 @@
+.homepage-container {
+  background-color: whitesmoke;
+}
+
 .cats-container {
   display: flex;
   flex-wrap: wrap;
@@ -5,7 +9,32 @@
   align-items: center;
   gap: 6rem 3rem;
   padding: 6rem 3rem;
-  background-color: rgb(86 77 57 / 95%)
+}
+
+.hero-section h1 {
+  margin: 0;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero-section {
+  padding: 3rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  padding: 0 3rem;
+}
+
+.hero-cat {
+  border-radius: 50%;
+  max-width: 20rem;
 }
 
 .cat-img{
@@ -20,7 +49,6 @@
 
 .mat-mdc-card {
   align-items: center;
-  
 }
 
 .view-details-btn {

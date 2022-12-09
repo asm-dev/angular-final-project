@@ -17,8 +17,10 @@
     </mat-list>
 
     <div class="btns-container">
-      <button mat-stroked-button (click)="goBack()">Back</button>
-      <!-- The update and delete buttons only display if the cat is editable (user made)-->
+      
+        <button mat-stroked-button (click)="goBack()">Back</button>
+      
+        <!-- The update and delete buttons only display if the cat is editable (user made)-->
       <a [routerLink]="['/cats/update/',cat.id]"> 
         <button *ngIf="cat.editable" mat-stroked-button color="primary">Update</button>
       </a>

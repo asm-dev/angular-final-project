@@ -1,8 +1,24 @@
-<section>
+<section class="homepage-container">
+    <div class="top-div"></div>
     
     <div *ngIf="loading$ | async" class="loading-spinner">
         <mat-spinner></mat-spinner>
     </div>
+
+    <section class="hero-section">
+        <h1>Welcome to our shelter</h1>
+        <div class="hero-content">
+            
+            <img src="../../../assets/images/intro-cat.jpg" class="hero-cat" alt="Cat on yellow background">
+            
+            <div class="hero-text">
+                <b><p>Are you looking to give a cat a loving home? You're at the right place</p></b>
+                <p>Our shelter has given to many cats a warm, safe and loving place to play, meow and grow. Our mission is to make sure that every cat has a home, and we can't wait to welcome you on board.</p>
+                <p>You can take a look at the shelter's cats below, and if you know a cat looking for a home, please feel free to <a [routerLink]="['']">add it to our shelter</a> so we can make sure we find them a home soon.</p>
+            </div>
+        </div>
+        
+    </section>
    
     <div class="cats-container" *ngIf="!(loading$ | async)">
         <mat-card class="cat-card" *ngFor="let cat of cats$ | async">
