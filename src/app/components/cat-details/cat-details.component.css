@@ -1,3 +1,4 @@
+
 .cat-details-img {
   max-width: 100%;
   border-radius: 8px;
@@ -7,6 +8,7 @@
 .cat-details-container {
   justify-content: center;
   flex-direction: column;
+
 }
 
 .cat-details-container, .cat-details-content {
@@ -19,7 +21,11 @@
   justify-content: center;
   gap: 3rem;
   margin-bottom: 1.5rem;
+  border: 1px solid rgb(86 77 57 / 95%);
+  padding: 0 3rem;
+  border-radius: 4px;
 }
+
 
 @media only screen and (min-width: 1000px) {
   img {
@@ -32,3 +38,5 @@
   gap: 1.5rem;
   flex-direction: column;
 }
+
+

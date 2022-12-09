@@ -14,10 +14,7 @@ export class CatsAPIService {
   constructor(private http: HttpClient) { }
  
   getCats(): Observable<Cat[]> {
-    return this.http.get<Cat[]>(`${this.BASE_URL}/cats`)
-    .pipe(
-      delay(1000)
-    );    
+    return this.http.get<Cat[]>(`${this.BASE_URL}/cats`);  
   }
 
   getCatById(id: number): Observable<Cat> {

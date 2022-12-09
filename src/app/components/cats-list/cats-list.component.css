@@ -3,8 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin: 3rem auto;
+  gap: 6rem 3rem;
+  padding: 6rem 3rem;
+  background-color: rgb(86 77 57 / 95%)
 }
 
 .cat-img{
@@ -19,6 +20,7 @@
 
 .mat-mdc-card {
   align-items: center;
+  
 }
 
 .view-details-btn {
