@@ -1,14 +1,14 @@
 
 .cat-details-img {
   max-width: 100%;
-  border-radius: 8px;
   margin: 1.5rem auto;
 }
 
 .cat-details-container {
   justify-content: center;
   flex-direction: column;
-
+  background-color: whitesmoke;
+  
 }
 
 .cat-details-container, .cat-details-content {
@@ -19,18 +19,11 @@
 .cat-details-content {
   flex-direction: row;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 1.5rem;
-  border: 1px solid rgb(86 77 57 / 95%);
   padding: 0 3rem;
   border-radius: 4px;
-}
-
-
-@media only screen and (min-width: 1000px) {
-  img {
-    max-height: 50vh;
-  }
+  background-color: white;
 }
 
 .btns-container {
@@ -39,4 +32,18 @@
   flex-direction: column;
 }
 
+@media only screen and (min-width: 600px) {
+  .cat-details-content {
+    gap: 3rem;
+    border: 1px solid rgba(200, 200, 200, 0.95);
+  }
+  .cat-details-img {
+    border-radius: 8px;
+  }
+}
 
+@media only screen and (min-width: 1000px) {
+  img {
+    max-height: 50vh;
+  } 
+}

@@ -7,34 +7,47 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 6rem 3rem;
-  padding: 6rem 3rem;
+  gap: 3rem 3rem;
+  padding: 3rem 0;
 }
 
-.hero-section h1 {
+.hero-title {
   margin: 0;
-  font-size: 3rem;
-  padding-bottom: 3rem;
+  font-size: 4rem;
+  display: inline;
+  animation-name: spacing;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spacing {
+  0% {
+    letter-spacing: normal;
+  }
+
+  50% {
+    letter-spacing: 0.5rem;
+  }
+
+  100% {
+    letter-spacing: normal;
+  }
 }
 
 .hero-section {
-  padding: 3rem;
+  padding: 0.5rem;
 }
 
 .hero-content {
+  padding-top: 3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.hero-text {
-  padding: 0 3rem;
-}
-
 .hero-cat {
-  border-radius: 50%;
-  max-width: 20rem;
+  display: none;
 }
 
 .cat-img{
@@ -51,6 +64,10 @@
   align-items: center;
 }
 
+.mat-mdc-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 .view-details-btn {
   margin: 1rem auto;
 }
@@ -60,4 +77,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-cat {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 20rem;
+  }
+
+  .hero-text {
+    padding: 0 3rem;
+  }
+
+  .hero-title {
+    animation-duration: 8s;
+  }
+
+  @keyframes spacing {
+    0% {
+      letter-spacing: normal;
+    }
+  
+    50% {
+      letter-spacing: 3rem;
+    }
+  
+    100% {
+      letter-spacing: normal;
+    }
+  }
+
+  .hero-section {
+    padding: 3rem;
+  }
+
+  .cats-container {
+    gap: 6rem 3rem;
+    padding: 6rem 3rem;
+  }
+  
 }
