@@ -1,0 +1,24 @@
+.footer{
+    background-color: white;
+    padding: 0.5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.footer-logo {
+    width: 5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content > span {
+    display: block;
+}
