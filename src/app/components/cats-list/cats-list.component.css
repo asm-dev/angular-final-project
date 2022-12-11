@@ -79,7 +79,7 @@
   justify-content: center;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .hero-cat {
     display: inline-block;
     border-radius: 50%;
@@ -115,6 +115,19 @@
   .cats-container {
     gap: 6rem 3rem;
     padding: 6rem 3rem;
+  }
+  
+}
+
+@media only screen and (min-width: 1500px) {
+  .hero-cat {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 30rem;
+  }
+
+  .hero-content {
+    justify-content: center;
   }
   
 }
