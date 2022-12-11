@@ -2,6 +2,8 @@
 
 I built a Single-Page Application with [Angular CLI](https://github.com/angular/angular-cli), consisting of multiple views and implemented all CRUD actions. I styled the SPA's UI using CSS and Angular Material and used a JSON Server as REST API.
 
+This is a SPA built for a fictional cat shelter. The page offers the user the opportunity to browse, add, delete and update cats from a made-up shelter database of homeless cats.
+
 <br>
 <p align="center">
   <img src="/src/assets/images/cat-shelter-logo.png" style="width:150px;"/>
@@ -125,27 +127,50 @@ Despite the project being quite an ambitious one, built with several functionali
 </p>
 <br>
 
-**Create a cat**
+**Create, update and delete a cat** \*Update and delete options are only available on user-made cats
 <br>
 <br>
 
+1. Complete and submit add cat form. Beware of build in and custom validations
+
 <p align="center">
-  <img src="/src/assets/readme/create-cat.gif"/>
+  <img src="/src/assets/readme/add-a-cat-validation.png"/>
+</p>
+<br>
+<p align="center">
+  <img src="/src/assets/readme/custom-validations.png"/>
+</p>
+<br>
+<p align="center">
+  <img src="/src/assets/readme/add-a-cat.png"/>
 </p>
 <br>
 
-**Update a cat** \*Option only available on user-made cats
-<br>
-<br>
+2. You'd be able to spot your newly made cat at the end of the cats list. Click on view details.
 
 <p align="center">
-  <img src="/src/assets/readme/update-cat.gif"/>
+  <img src="/src/assets/readme/update.png"/>
 </p>
 <br>
 
-**Delete a cat** \*Option only available on user-made cats
+3. Press update to update the cats details
+
+<p align="center">
+  <img src="/src/assets/readme/cat-details.png"/>
+</p>
 <br>
+
+<p align="center">
+  <img src="/src/assets/readme/update-dets.png"/>
+</p>
 <br>
+
+<p align="center">
+  <img src="/src/assets/readme/updated-dets.png"/>
+</p>
+<br>
+
+4. Press delete to delete the cat from the database
 
 <p align="center">
   <img src="/src/assets/readme/delete-cat.gif"/>
