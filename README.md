@@ -4,7 +4,7 @@ I built a Single-Page Application with [Angular CLI](https://github.com/angular/
 
 <br>
 <p align="center">
-  <img src="/src/assets/images/cat-shelter-logo.png"/>
+  <img src="/src/assets/images/cat-shelter-logo.png" style="width:150px;"/>
 </p>
 
 <br>
