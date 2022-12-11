@@ -4,14 +4,14 @@ I built a Single-Page Application with [Angular CLI](https://github.com/angular/
 
 ## Wireframes and Project Management
 
-I created some wireframes using Miro that aided me in mocking up the main page structure and functionalities. Once I had outlined the main layout, I used Trello to project manage, keep track the tasks and ensure the project was completed in time. This project took approximately 45h, and having a strong wireframe foundation helped me make sure a MVP was delivered on time.
+I created some wireframes using Miro that aided me in mocking up the main page structure and functionalities. Once I had outlined the main layout, I used Trello to project manage, keep track the tasks and ensure the project was completed in time. This project took approximately 45h, and having a strong wireframe foundation helped me make sure that a MVP was delivered on time.
 
 <br>
 
 **Wireframe:**
 
 <p align="center">
-  <img src="/src/assets/images/readme/miro-wireframe.png"/>
+  <img src="/src/assets/readme/miro-wireframe.png"/>
 </p>
 
 <br>
@@ -19,7 +19,7 @@ I created some wireframes using Miro that aided me in mocking up the main page s
 **Task management:**
 
 <p align="center">
-  <img src="/src/assets/images/readme/trello-task-management.png"/>
+  <img src="/src/assets/readme/trello-task-management.png>
 </p>
 
 ## Setup
