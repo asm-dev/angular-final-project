@@ -132,11 +132,12 @@ Despite the project being quite an ambitious one, built with several functionali
 <br>
 
 1. Complete and submit add cat form. Beware of build in and custom validations
+   <br>
+   <br>
 
 <p align="center">
   <img src="/src/assets/readme/add-a-cat-validation.png"/>
 </p>
-<br>
 <p align="center">
   <img src="/src/assets/readme/custom-validations.png"/>
 </p>
@@ -144,16 +145,18 @@ Despite the project being quite an ambitious one, built with several functionali
 <p align="center">
   <img src="/src/assets/readme/add-a-cat.png"/>
 </p>
-<br>
 
 2. You'd be able to spot your newly made cat at the end of the cats list. Click on view details.
+   <br>
+   <br>
 
 <p align="center">
   <img src="/src/assets/readme/update.png"/>
 </p>
-<br>
 
 3. Press update to update the cats details
+   <br>
+   <br>
 
 <p align="center">
   <img src="/src/assets/readme/cat-details.png"/>
@@ -163,7 +166,6 @@ Despite the project being quite an ambitious one, built with several functionali
 <p align="center">
   <img src="/src/assets/readme/update-dets.png"/>
 </p>
-<br>
 
 <p align="center">
   <img src="/src/assets/readme/updated-dets.png"/>
@@ -171,6 +173,8 @@ Despite the project being quite an ambitious one, built with several functionali
 <br>
 
 4. Press delete to delete the cat from the database
+   <br>
+   <br>
 
 <p align="center">
   <img src="/src/assets/readme/delete-cat.gif"/>
