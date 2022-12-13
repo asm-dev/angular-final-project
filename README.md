@@ -8,6 +8,11 @@ This is a SPA built for a fictional cat shelter. The page offers the user the op
 <p align="center">
   <img src="/src/assets/images/cat-shelter-logo.png" style="width:150px;"/>
 </p>
+<p align="center">
+<a href="https://trello.com/b/j0zWrAEl/angular-project">Trello board</a>
+|
+<a href="https://docs.google.com/presentation/d/1lvqsxE65lIcI1QTjtRq4qfBQ7PMx_SVRyfaohBR91qs/edit?usp=sharing">Presentation</a>
+</p>
 
 <br>
 
@@ -24,12 +29,6 @@ I created some wireframes using Miro that aided me in mocking up the main page s
 </p>
 
 <br>
-
-**Task management:**
-
-<p align="center">
-  <img src="/src/assets/readme/trello-task-management.png"/>
-</p>
 
 ## Setup
 
@@ -70,6 +69,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Angular Material
 - Procreate (logo)
 - Postman
+- Google Suite
 - VSC
 
 ## Components and Pages Structure
