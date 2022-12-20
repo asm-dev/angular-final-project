@@ -199,6 +199,7 @@ Despite the project being quite an ambitious one, built with several functionali
 
 There are a few iterations that could make this project even better:
 
+- Revisit and fix update-cat form validations. Several mat-errors seem to be linked to the img input instead of the relevant one
 - Allow user to filter cats by breed and specifications
 - Add a favicon
 - Provide a default cat image so an image isn't required when creating a new cat
